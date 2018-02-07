@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BE3D9BB8-1EDB-44ED-A77D-7F147BB0F3D3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Sqlite_static</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;NO_TCL;_CRT_SECURE_NO_WARNINGS;SQLITE_ENABLE_BROKEN_FTS1=177;SQLITE_ENABLE_BROKEN_FTS2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\ModoBookPOS\lib\sqlite3\Sqlite_static\icu\source\common;D:\ModoBookPOS\lib\sqlite3\Sqlite_static\sqlite-preprocessed-3220000;D:\ModoBookPOS\lib\sqlite3\Sqlite_static\icu\source\i18n;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\icu\source\common\unicode\appendable.h" />
+    <ClInclude Include="..\icu\source\common\unicode\brkiter.h" />
+    <ClInclude Include="..\icu\source\common\unicode\bytestream.h" />
+    <ClInclude Include="..\icu\source\common\unicode\bytestrie.h" />
+    <ClInclude Include="..\icu\source\common\unicode\bytestriebuilder.h" />
+    <ClInclude Include="..\icu\source\common\unicode\caniter.h" />
+    <ClInclude Include="..\icu\source\common\unicode\casemap.h" />
+    <ClInclude Include="..\icu\source\common\unicode\char16ptr.h" />
+    <ClInclude Include="..\icu\source\common\unicode\chariter.h" />
+    <ClInclude Include="..\icu\source\common\unicode\dbbi.h" />
+    <ClInclude Include="..\icu\source\common\unicode\docmain.h" />
+    <ClInclude Include="..\icu\source\common\unicode\dtintrv.h" />
+    <ClInclude Include="..\icu\source\common\unicode\edits.h" />
+    <ClInclude Include="..\icu\source\common\unicode\enumset.h" />
+    <ClInclude Include="..\icu\source\common\unicode\errorcode.h" />
+    <ClInclude Include="..\icu\source\common\unicode\filteredbrk.h" />
+    <ClInclude Include="..\icu\source\common\unicode\icudataver.h" />
+    <ClInclude Include="..\icu\source\common\unicode\icuplug.h" />
+    <ClInclude Include="..\icu\source\common\unicode\idna.h" />
+    <ClInclude Include="..\icu\source\common\unicode\listformatter.h" />
+    <ClInclude Include="..\icu\source\common\unicode\localpointer.h" />
+    <ClInclude Include="..\icu\source\common\unicode\locdspnm.h" />
+    <ClInclude Include="..\icu\source\common\unicode\locid.h" />
+    <ClInclude Include="..\icu\source\common\unicode\messagepattern.h" />
+    <ClInclude Include="..\icu\source\common\unicode\normalizer2.h" />
+    <ClInclude Include="..\icu\source\common\unicode\normlzr.h" />
+    <ClInclude Include="..\icu\source\common\unicode\parseerr.h" />
+    <ClInclude Include="..\icu\source\common\unicode\parsepos.h" />
+    <ClInclude Include="..\icu\source\common\unicode\platform.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ptypes.h" />
+    <ClInclude Include="..\icu\source\common\unicode\putil.h" />
+    <ClInclude Include="..\icu\source\common\unicode\rbbi.h" />
+    <ClInclude Include="..\icu\source\common\unicode\rep.h" />
+    <ClInclude Include="..\icu\source\common\unicode\resbund.h" />
+    <ClInclude Include="..\icu\source\common\unicode\schriter.h" />
+    <ClInclude Include="..\icu\source\common\unicode\simpleformatter.h" />
+    <ClInclude Include="..\icu\source\common\unicode\std_string.h" />
+    <ClInclude Include="..\icu\source\common\unicode\strenum.h" />
+    <ClInclude Include="..\icu\source\common\unicode\stringoptions.h" />
+    <ClInclude Include="..\icu\source\common\unicode\stringpiece.h" />
+    <ClInclude Include="..\icu\source\common\unicode\stringtriebuilder.h" />
+    <ClInclude Include="..\icu\source\common\unicode\symtable.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ubidi.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ubiditransform.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ubrk.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ucasemap.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ucat.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uchar.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ucharstrie.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ucharstriebuilder.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uchriter.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uclean.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ucnv.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ucnvsel.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ucnv_cb.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ucnv_err.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uconfig.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ucurr.h" />
+    <ClInclude Include="..\icu\source\common\unicode\udata.h" />
+    <ClInclude Include="..\icu\source\common\unicode\udisplaycontext.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uenum.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uidna.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uiter.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uldnames.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ulistformatter.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uloc.h" />
+    <ClInclude Include="..\icu\source\common\unicode\umachine.h" />
+    <ClInclude Include="..\icu\source\common\unicode\umisc.h" />
+    <ClInclude Include="..\icu\source\common\unicode\unifilt.h" />
+    <ClInclude Include="..\icu\source\common\unicode\unifunct.h" />
+    <ClInclude Include="..\icu\source\common\unicode\unimatch.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uniset.h" />
+    <ClInclude Include="..\icu\source\common\unicode\unistr.h" />
+    <ClInclude Include="..\icu\source\common\unicode\unorm.h" />
+    <ClInclude Include="..\icu\source\common\unicode\unorm2.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uobject.h" />
+    <ClInclude Include="..\icu\source\common\unicode\urename.h" />
+    <ClInclude Include="..\icu\source\common\unicode\urep.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ures.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uscript.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uset.h" />
+    <ClInclude Include="..\icu\source\common\unicode\usetiter.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ushape.h" />
+    <ClInclude Include="..\icu\source\common\unicode\usprep.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ustring.h" />
+    <ClInclude Include="..\icu\source\common\unicode\ustringtrie.h" />
+    <ClInclude Include="..\icu\source\common\unicode\utext.h" />
+    <ClInclude Include="..\icu\source\common\unicode\utf.h" />
+    <ClInclude Include="..\icu\source\common\unicode\utf16.h" />
+    <ClInclude Include="..\icu\source\common\unicode\utf32.h" />
+    <ClInclude Include="..\icu\source\common\unicode\utf8.h" />
+    <ClInclude Include="..\icu\source\common\unicode\utf_old.h" />
+    <ClInclude Include="..\icu\source\common\unicode\utrace.h" />
+    <ClInclude Include="..\icu\source\common\unicode\utypes.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uvernum.h" />
+    <ClInclude Include="..\icu\source\common\unicode\uversion.h" />
+    <ClInclude Include="..\sqlite-amalgamation-3220000\sqlite3.h" />
+    <ClInclude Include="..\sqlite-amalgamation-3220000\sqlite3ext.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\btree.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\btreeInt.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts1.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts1_hash.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts1_tokenizer.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts2.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts2_hash.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts2_tokenizer.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts3.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts3Int.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts3_hash.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts3_tokenizer.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts5.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\hash.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\hwtime.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\keywordhash.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\msvc.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\mutex.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\opcodes.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\os.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\os_common.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\os_setup.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\os_win.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\pager.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\parse.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\pcache.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\pragma.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\rtree.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqlite3rbu.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqlite3rtree.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqlite3session.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqlite3userauth.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqliteicu.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqliteInt.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqliteLimit.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\vdbe.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\vdbeInt.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\vxworks.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\wal.h" />
+    <ClInclude Include="..\sqlite-preprocessed-3220000\whereInt.h" />
+    <ClInclude Include="..\sqlite-src-3220000\ext\rtree\rtree.h" />
+    <ClInclude Include="..\sqlite-src-3220000\ext\rtree\sqlite3rtree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\sqlite-amalgamation-3220000\shell.c" />
+    <ClCompile Include="..\sqlite-amalgamation-3220000\sqlite3.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\alter.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\analyze.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\attach.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\auth.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\backup.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\bitvec.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\btmutex.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\btree.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\build.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\callback.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\complete.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\ctime.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\date.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\dbpage.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\dbstat.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\delete.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\expr.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fault.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fkey.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts1.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts1_hash.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts1_porter.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts1_tokenizer1.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2_hash.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2_icu.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2_porter.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2_tokenizer.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2_tokenizer1.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_aux.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_expr.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_hash.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_icu.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_porter.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_snippet.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_tokenizer.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_tokenizer1.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_tokenize_vtab.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_unicode.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_unicode2.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_write.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts5.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\func.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\global.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\hash.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\icu.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\insert.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\json1.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\legacy.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\loadext.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\main.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\malloc.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mem0.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mem1.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mem2.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mem3.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mem5.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\memjournal.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mutex.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mutex_noop.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mutex_unix.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mutex_w32.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\notify.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\opcodes.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\os.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\os_unix.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\os_win.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\pager.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\parse.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\pcache.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\pcache1.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\pragma.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\prepare.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\printf.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\random.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\resolve.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\rowset.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\rtree.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\select.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\sqlite3rbu.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\sqlite3session.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\status.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\stmt.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\table.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\threads.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\tokenize.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\treeview.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\trigger.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\update.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\userauth.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\utf.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\util.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vacuum.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbe.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbeapi.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbeaux.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbeblob.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbemem.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbesort.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbetrace.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vtab.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\wal.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\walker.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\where.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\wherecode.c" />
+    <ClCompile Include="..\sqlite-preprocessed-3220000\whereexpr.c" />
+    <ClCompile Include="..\sqlite-src-3220000\ext\rtree\rtree.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\sqlite-preprocessed-3220000\shell.c.in" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

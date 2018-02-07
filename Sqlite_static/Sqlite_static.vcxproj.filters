@@ -1,0 +1,791 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="icu">
+      <UniqueIdentifier>{5c293e20-89bf-440e-87fb-25baa7d3072b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sql">
+      <UniqueIdentifier>{8e429db1-ba73-4a9e-9783-7ebe87e3b8b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sql\sqlite-preprocessed-3220000">
+      <UniqueIdentifier>{58d820dd-523c-45aa-972a-3fe6afc2de14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sql\sqlite-src-3220000">
+      <UniqueIdentifier>{c5dfc139-6777-4cd5-93e9-26f22233af0b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\icu\source\common\unicode\appendable.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\brkiter.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\bytestream.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\bytestrie.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\bytestriebuilder.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\caniter.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\casemap.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\char16ptr.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\chariter.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\dbbi.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\docmain.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\dtintrv.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\edits.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\enumset.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\errorcode.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\filteredbrk.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\icudataver.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\icuplug.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\idna.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\listformatter.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\localpointer.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\locdspnm.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\locid.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\messagepattern.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\normalizer2.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\normlzr.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\parseerr.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\parsepos.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\platform.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ptypes.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\putil.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\rbbi.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\rep.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\resbund.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\schriter.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\simpleformatter.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\std_string.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\strenum.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\stringoptions.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\stringpiece.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\stringtriebuilder.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\symtable.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ubidi.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ubiditransform.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ubrk.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ucasemap.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ucat.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uchar.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ucharstrie.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ucharstriebuilder.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uchriter.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uclean.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ucnv.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ucnv_cb.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ucnv_err.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ucnvsel.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uconfig.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ucurr.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\udata.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\udisplaycontext.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uenum.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uidna.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uiter.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uldnames.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ulistformatter.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uloc.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\umachine.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\umisc.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\unifilt.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\unifunct.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\unimatch.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uniset.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\unistr.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\unorm.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\unorm2.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uobject.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\urename.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\urep.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ures.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uscript.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uset.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\usetiter.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ushape.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\usprep.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ustring.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\ustringtrie.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\utext.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\utf.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\utf_old.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\utf8.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\utf16.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\utf32.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\utrace.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\utypes.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uvernum.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\icu\source\common\unicode\uversion.h">
+      <Filter>icu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\btree.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\btreeInt.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts1.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts1_hash.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts1_tokenizer.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts2.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts2_hash.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts2_tokenizer.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts3.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts3_hash.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts3_tokenizer.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts3Int.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\fts5.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\hash.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\hwtime.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\keywordhash.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\msvc.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\mutex.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\opcodes.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\os.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\os_common.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\os_setup.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\os_win.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\pager.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\parse.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\pcache.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\pragma.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\rtree.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqlite3rbu.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqlite3rtree.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqlite3session.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqlite3userauth.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqliteicu.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqliteInt.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\sqliteLimit.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\vdbe.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\vdbeInt.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\vxworks.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\wal.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-preprocessed-3220000\whereInt.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-src-3220000\ext\rtree\rtree.h">
+      <Filter>sql\sqlite-src-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-src-3220000\ext\rtree\sqlite3rtree.h">
+      <Filter>sql\sqlite-src-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-amalgamation-3220000\sqlite3.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite-amalgamation-3220000\sqlite3ext.h">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\alter.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\analyze.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\attach.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\auth.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\backup.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\bitvec.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\btmutex.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\btree.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\build.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\callback.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\complete.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\ctime.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\date.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\dbpage.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\dbstat.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\delete.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\expr.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fault.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fkey.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts1.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts1_hash.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts1_porter.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts1_tokenizer1.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2_hash.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2_icu.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2_porter.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2_tokenizer.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts2_tokenizer1.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_aux.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_expr.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_hash.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_icu.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_porter.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_snippet.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_tokenize_vtab.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_tokenizer.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_tokenizer1.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_unicode.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_unicode2.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts3_write.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\fts5.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\func.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\global.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\hash.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\icu.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\insert.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\json1.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\legacy.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\loadext.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\main.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\malloc.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mem0.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mem1.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mem2.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mem3.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mem5.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\memjournal.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mutex.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mutex_noop.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mutex_unix.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\mutex_w32.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\notify.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\opcodes.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\os.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\os_unix.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\os_win.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\pager.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\parse.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\pcache.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\pcache1.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\pragma.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\prepare.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\printf.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\random.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\resolve.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\rowset.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\rtree.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\select.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\sqlite3rbu.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\sqlite3session.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\status.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\stmt.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\table.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\threads.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\tokenize.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\treeview.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\trigger.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\update.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\userauth.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\utf.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\util.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vacuum.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbe.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbeapi.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbeaux.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbeblob.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbemem.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbesort.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vdbetrace.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\vtab.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\wal.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\walker.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\where.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\wherecode.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-preprocessed-3220000\whereexpr.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-src-3220000\ext\rtree\rtree.c">
+      <Filter>sql\sqlite-src-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-amalgamation-3220000\shell.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sqlite-amalgamation-3220000\sqlite3.c">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\sqlite-preprocessed-3220000\shell.c.in">
+      <Filter>sql\sqlite-preprocessed-3220000</Filter>
+    </None>
+  </ItemGroup>
+</Project>
